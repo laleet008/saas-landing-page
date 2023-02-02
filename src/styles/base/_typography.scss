@@ -1,0 +1,62 @@
+@use '../abstracts/' as *;
+
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-family: $font-family-sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5,
+h6 {
+  font-size: 0.875em;
+}
+
+p {
+  color: $secondary;
+  line-height: 1.1em;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+  text-underline-offset: none;
+  &:active {
+    text-decoration: none;
+  }
+  &:hover {
+    color: darken($secondary, 10%);
+  }
+}

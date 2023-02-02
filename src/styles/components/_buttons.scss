@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+button {
+  @include button-primary($secondary, $primary-dark) {
+    background-color: $primary-light;
+    font-family: $poppins-font;
+  }
+}

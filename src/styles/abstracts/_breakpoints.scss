@@ -1,0 +1,11 @@
+@mixin breakpoint($size) {
+  @if $size == sx {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $size == sm {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}
